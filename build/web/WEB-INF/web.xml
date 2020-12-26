@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    
+    <servlet>
+        <servlet-name>project</servlet-name>
+        <jsp-file>/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>project</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    <servlet>
+        <servlet-name>show_users</servlet-name>
+        <jsp-file>/show_users.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>show_users</servlet-name>
+        <url-pattern>/show_users</url-pattern>        
+    </servlet-mapping>
+    
+    
+    <servlet>
+        <servlet-name>jstlfunction</servlet-name>
+        <jsp-file>/JSTLFunction.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>jstlfunction</servlet-name>
+        <url-pattern>/jstlfunction</url-pattern>
+    </servlet-mapping>
+    
+    
+</web-app>
